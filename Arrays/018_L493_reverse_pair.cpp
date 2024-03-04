@@ -12,7 +12,6 @@ void merge(vector<int> &arr,int low, int mid,int high,int &count){
         }else{
             temp.push_back(arr[j]);
             j++;
-           // count+= (mid - i + 1);
         }
     }
     while(i<=mid){
@@ -27,6 +26,7 @@ void merge(vector<int> &arr,int low, int mid,int high,int &count){
         arr[i]=temp[i-low];
     }
 }
+
 void inversePair(vector<int> &arr,int low,int mid,int high,int &count){
     int j=mid+1;
     for(int i=low;i<=mid;i++){
